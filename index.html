@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <input type="text" id="resultado" readonly>
+
+    <input type="button" value="Calcular suma" onclick="calcularSuma()">
+    <input type="button" value="Calcular resta" onclick="calcularResta()">
+
+    <script>
+        function calcularSuma() {
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            document.getElementById("resultado").value = a + b;
+        }
+
+        function calcularResta() {
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            document.getElementById("resultado").value = a - b;
+        }
+    </script>
+</body>
+</html>
