@@ -10,6 +10,7 @@
 
     <input type="button" value="Calcular suma" style="background-color: green;" onclick="calcularSuma()">
     <input type="button" value="Calcular resta" style="background-color: red;" onclick="calcularResta()">
+    <input type="button" value="Calcular producto" onclick="calcularProducto()">
 
 
     <script>
@@ -24,6 +25,12 @@
             let b = parseInt(document.getElementById("num2").value);
             document.getElementById("resultado").value = a - b;
         }
+	function calcularProducto() {
+   	    let a = parseInt(document.getElementById("num1").value);
+    	    let b = parseInt(document.getElementById("num2").value);
+    	    document.getElementById("resultado").value = a * b;
+}
+
     </script>
 </body>
 </html>
